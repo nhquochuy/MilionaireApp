@@ -26,8 +26,13 @@ class HomeViewController: UIViewController {
     
     @objc fileprivate func StartButtonClick(){
         let QuizView = QuizViewController()
-        //navigationController?.pushViewController(QuizView, animated: true)
-        present(QuizView, animated: true, completion: nil)
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.startButton.transform = .init(scaleX: 10, y: 10)
+            self.startButton.alpha = 0
+        }) { (animate) in
+            self.present(QuizView, animated: false, completion: nil)
+        }
     }
     
     override func viewDidLoad() {

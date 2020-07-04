@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MilionaireApp
+//  AutoLayout
 //
-//  Created by Quoc Huy on 6/28/20.
+//  Created by Quoc Huy on 6/24/20.
 //  Copyright © 2020 Quoc Huy. All rights reserved.
 //
 
